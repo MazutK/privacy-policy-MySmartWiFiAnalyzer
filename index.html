@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - MySmartWiFiAnalyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(20, 20, 35, 0.95);
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(100, 200, 255, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid rgba(100, 200, 255, 0.2);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #64c8ff;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(100, 200, 255, 0.3);
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        .last-updated {
+            color: #666;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #64c8ff;
+            margin: 40px 0 20px 0;
+            border-left: 4px solid #64c8ff;
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #a8d8ff;
+            margin: 25px 0 15px 0;
+        }
+
+        h4 {
+            font-size: 1.1em;
+            color: #c8e0ff;
+            margin: 15px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            color: #d0d0d0;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #d0d0d0;
+        }
+
+        strong {
+            color: #64c8ff;
+            font-weight: 600;
+        }
+
+        a {
+            color: #64c8ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-bottom: 1px dotted rgba(100, 200, 255, 0.3);
+        }
+
+        a:hover {
+            color: #a8d8ff;
+            border-bottom-color: rgba(168, 216, 255, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: rgba(100, 200, 255, 0.15);
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            color: #64c8ff;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(100, 200, 255, 0.3);
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(100, 200, 255, 0.1);
+            color: #d0d0d0;
+        }
+
+        tr:hover {
+            background: rgba(100, 200, 255, 0.05);
+        }
+
+        .highlight-box {
+            background: rgba(100, 200, 255, 0.1);
+            border-left: 4px solid #64c8ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .warning-box {
+            background: rgba(255, 150, 0, 0.1);
+            border-left: 4px solid #ff9600;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+            color: #ffa500;
+        }
+
+        .success-box {
+            background: rgba(100, 200, 100, 0.1);
+            border-left: 4px solid #64c864;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+            color: #a8ffa8;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(100, 200, 255, 0.1);
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .toc {
+            background: rgba(100, 200, 255, 0.05);
+            border: 1px solid rgba(100, 200, 255, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ol {
+            margin-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                color: #333;
+                background: linear-gradient(135deg, #f5f5f5 0%, #e8e8f0 100%);
+            }
+
+            .container {
+                background: rgba(255, 255, 255, 0.95);
+                border-color: rgba(100, 150, 255, 0.2);
+            }
+
+            h1, h2 {
+                color: #0066cc;
+                text-shadow: none;
+            }
+
+            h3, h4 {
+                color: #0080ff;
+            }
+
+            p, li, td {
+                color: #333;
+            }
+
+            a {
+                color: #0066cc;
+                border-bottom-color: rgba(0, 100, 200, 0.3);
+            }
+
+            a:hover {
+                color: #0080ff;
+                border-bottom-color: rgba(0, 128, 255, 0.5);
+            }
+
+            .highlight-box {
+                background: rgba(100, 150, 255, 0.1);
+                border-left-color: #0066cc;
+            }
+
+            thead {
+                background: rgba(100, 150, 255, 0.15);
+            }
+
+            th {
+                color: #0066cc;
+                border-bottom-color: rgba(100, 150, 255, 0.3);
+            }
+
+            tr:hover {
+                background: rgba(100, 150, 255, 0.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 Polityka Prywatności</h1>
+            <p class="subtitle"><strong>MySmartWiFiAnalyzer</strong></p>
+            <p class="last-updated">Data wejścia w życie: <strong>29 listopada 2025 roku</strong></p>
+        </header>
+
+        <div class="toc">
+            <h3>📑 Spis treści</h3>
+            <ol>
+                <li><a href="#intro">Wstęp</a></li>
+                <li><a href="#admin">Administrator Danych</a></li>
+                <li><a href="#data">Jakie Dane Zbieramy</a></li>
+                <li><a href="#legal">Baza Prawna Przetwarzania Danych</a></li>
+                <li><a href="#purpose">Cel Przetwarzania Danych</a></li>
+                <li><a href="#sharing">Udostępnianie Danych Stronom Trzecim</a></li>
+                <li><a href="#retention">Przechowywanie Danych</a></li>
+                <li><a href="#rights">Twoje Prawa</a></li>
+                <li><a href="#security">Bezpieczeństwo Danych</a></li>
+                <li><a href="#children">Polityka Dotycząca Dzieci</a></li>
+                <li><a href="#cookies">Pliki Cookie i Similar Technologies</a></li>
+                <li><a href="#links">Linki do Stron Trzecich</a></li>
+                <li><a href="#changes">Zmiany w Polityce Prywatności</a></li>
+                <li><a href="#complaints">Skargi do Organu Nadzoru</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#permissions">Podsumowanie Uprawnień</a></li>
+            </ol>
+        </div>
+
+        <h2 id="intro">1. Wstęp</h2>
+        <p>Niniejsza Polityka Prywatności („Polityka") opisuje, w jaki sposób aplikacja mobilna <strong>MySmartWiFiAnalyzer</strong> („Aplikacja") zbiera, wykorzystuje, przechowuje i chroni informacje użytkownika („Użytkownik", „Ty").</p>
+        <p>Aplikacja została opracowana w celu analizy sieci WiFi, wizualizacji mocy sygnału oraz ułatwienia diagnostyki łączności bezprzewodowej poprzez technologię Augmented Reality (AR).</p>
+        <p><strong>Niniejsza Polityka jest zgodna z:</strong></p>
+        <ul>
+            <li><strong>Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679</strong> (RODO)</li>
+            <li><strong>Ustawą o ochronie danych osobowych</strong> (Polska)</li>
+            <li><strong>Ustawą o ochronie konkurencji i konsumentów</strong> (Polska)</li>
+        </ul>
+
+        <h2 id="admin">2. Administrator Danych</h2>
+        <p><strong>Nazwa:</strong> Kacper Mazur</p>
+        <p><strong>Email:</strong> kacpermazur@onet.pl</p>
+        <p>W przypadku pytań dotyczących niniejszej Polityki Prywatności, skontaktuj się z nami na powyższy adres email.</p>
+
+        <h2 id="data">3. Jakie Dane Zbieramy</h2>
+
+        <h3>3.1 Dane zbierane z uprawnień aplikacji</h3>
+
+        <h4>A) 📍 Lokalizacja (Precise Location)</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Precyjna lokalizacja geograficzna urządzenia (GPS)</li>
+            <li><strong>Po co:</strong> Aby wyświetlić dostępne sieci WiFi w Twojej okolicy i powiązać moc sygnału z lokalizacją na mapie</li>
+            <li><strong>Czy przechowujemy:</strong> <span class="success-box">✅ NIE</span> Dane lokalizacji są przetwarzane lokalnie na Twoim urządzeniu i nie są wysyłane na serwer</li>
+        </ul>
+
+        <h4>B) 📡 Dostęp do WiFi (Nearby WiFi Networks)</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Lista dostępnych sieci WiFi (SSID, BSSID, moc sygnału w dBm, częstotliwość)</li>
+            <li><strong>Po co:</strong> Aby analizować dostępne sieci i wyświetlać ich charakterystyki</li>
+            <li><strong>Czy przechowujemy:</strong> <span class="success-box">✅ NIE</span> Informacje o sieciach są przetwarzane lokalnie. Nie przechowujemy haseł ani informacji logowania</li>
+        </ul>
+
+        <h4>C) 📷 Aparat fotograficzny (Camera)</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Dostęp do aparatu</li>
+            <li><strong>Po co:</strong> Aby wyświetlać wizualizację AR (Augmented Reality) nakładającą dane sieciowe na obraz z aparatu</li>
+            <li><strong>Czy przechowujemy:</strong> <span class="success-box">✅ NIE</span> Obraz z aparatu jest przetwarzany w czasie rzeczywistym i nie jest zapisywany ani przesyłany bez wyrażonej zgody użytkownika</li>
+        </ul>
+
+        <h4>D) 💾 Pliki i Media (Optional)</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Dostęp do pamięci wewnętrznej/karty SD</li>
+            <li><strong>Po co:</strong> Aby pozwolić na zapis zrzutów ekranu i raportów analizy</li>
+            <li><strong>Czy przechowujemy:</strong> Lokalnie na Twoim urządzeniu. Możesz te pliki udostępnić, ale to Twoja świadoma decyzja</li>
+        </ul>
+
+        <h3>3.2 Dane zbierane automatycznie</h3>
+
+        <h4>Diagnostyka i logi błędów</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Informacje o awariach aplikacji, stack traces, wersja systemu operacyjnego</li>
+            <li><strong>Po co:</strong> Aby ulepszyć stabilność aplikacji i naprawiać błędy</li>
+            <li><strong>Czy przechowujemy:</strong> Lokalnie na Twoim urządzeniu, chyba że wybierzesz wysłanie raportu diagnostycznego</li>
+        </ul>
+
+        <h4>Preferencje użytkownika</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Twoje ustawienia w aplikacji (np. preferencje wyświetlania, theme)</li>
+            <li><strong>Po co:</strong> Aby zapamiętać Twoje preferencje między sesjami</li>
+            <li><strong>Gdzie:</strong> Lokalnie na Twoim urządzeniu w SharedPreferences/DataStore</li>
+        </ul>
+
+        <h4>Dane o urządzeniu</h4>
+        <ul>
+            <li><strong>Co zbieramy:</strong> Model telefonu, wersja Androida, rozdzielczość ekranu</li>
+            <li><strong>Po co:</strong> Aby optymalizować aplikację dla różnych urządzeń</li>
+            <li><strong>Czy przechowujemy:</strong> Nie na serwerach - opcjonalnie w logach analitycznych</li>
+        </ul>
+
+        <h3>3.3 Usługi analityczne (Opcjonalnie)</h3>
+        <p>Jeśli Aplikacja korzysta z Google Analytics lub podobnych usług:</p>
+        <ul>
+            <li><strong>Google Analytics:</strong> Informacje o sposobie użytkowania aplikacji (liczba sesji, czas sesji, funkcje używane)</li>
+            <li><strong>Więcej info:</strong> <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności Google</a></li>
+        </ul>
+        <p><strong>Możesz zrezygnować</strong> z wysyłania danych analitycznych w ustawieniach aplikacji.</p>
+
+        <h2 id="legal">4. Baza Prawna Przetwarzania Danych</h2>
+        <p>Przetwarzamy Twoje dane na podstawie:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dane</th>
+                    <th>Baza prawna</th>
+                    <th>Obowiązek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lokalizacja</td>
+                    <td>Art. 6(1)(a) RODO - Wyrażona zgoda</td>
+                    <td>TAK - musisz wyrazić zgodę w ustawieniach Androida</td>
+                </tr>
+                <tr>
+                    <td>Dostęp do WiFi</td>
+                    <td>Art. 6(1)(a) RODO - Wyrażona zgoda</td>
+                    <td>TAK - musisz wyrazić zgodę w ustawieniach Androida</td>
+                </tr>
+                <tr>
+                    <td>Aparat</td>
+                    <td>Art. 6(1)(a) RODO - Wyrażona zgoda</td>
+                    <td>TAK - musisz wyrazić zgodę w ustawieniach Androida</td>
+                </tr>
+                <tr>
+                    <td>Dane diagnostyki</td>
+                    <td>Art. 6(1)(b) RODO - Wykonanie umowy</td>
+                    <td>Wymagane dla funkcjonalności aplikacji</td>
+                </tr>
+                <tr>
+                    <td>Preferencje</td>
+                    <td>Art. 6(1)(b) RODO - Wykonanie umowy</td>
+                    <td>Wymagane dla funkcjonalności aplikacji</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="purpose">5. Cel Przetwarzania Danych</h2>
+        <p>Przetwarzamy Twoje dane w następujących celach:</p>
+        <ol>
+            <li><strong>Świadczenie usługi</strong> - Umożliwienie skanowania sieci WiFi i wizualizacji AR</li>
+            <li><strong>Poprawianie aplikacji</strong> - Naprawa błędów i optymalizacja wydajności</li>
+            <li><strong>Bezpieczeństwo</strong> - Zapobieganie nadużyciom i atakom na aplikację</li>
+            <li><strong>Zgodność z prawem</strong> - Spełnianie wymogów prawnych i regulacyjnych</li>
+        </ol>
+
+        <div class="highlight-box">
+            <strong>❌ Nie używamy Twoich danych do:</strong>
+            <ul style="margin-top: 10px;">
+                <li>Sprzedaży danych osobom trzecim</li>
+                <li>Targetowania reklam behawioralnych</li>
+                <li>Profilingu bez Twojej wiedzy</li>
+                <li>Monitorowania aktywności na internecie poza aplikacją</li>
+            </ul>
+        </div>
+
+        <h2 id="sharing">6. Udostępnianie Danych Stronom Trzecim</h2>
+
+        <h3>6.1 Kiedy udostępniamy dane</h3>
+        <ul>
+            <li><strong>Dostawcy usług:</strong> Firebase, Google Cloud (jeśli używamy)</li>
+            <li><strong>Wymóg prawny:</strong> W przypadku żądania sądu lub organów ścigania</li>
+            <li><strong>Bezpieczeństwo:</strong> Jeśli podejrzewamy przestępstwo</li>
+        </ul>
+
+        <h3>6.2 Kiedy NIE udostępniamy</h3>
+        <div class="success-box">
+            <ul>
+                <li><strong>Dane lokalizacji</strong> - Nigdy nie są wysyłane na serwer</li>
+                <li><strong>Hasła WiFi</strong> - Nigdy nie są przechwytywane lub wysyłane</li>
+                <li><strong>Prywatne SSIDy</strong> - Przetwarzane tylko lokalnie</li>
+            </ul>
+        </div>
+
+        <h3>6.3 Transfery międzynarodowe</h3>
+        <p>Jeśli korzystamy z serwerów poza UE (np. Google Cloud US), dane są chronione poprzez <strong>Clausule Kontraktowe Standardowe (SCC)</strong> zgodnie z RODO.</p>
+
+        <h2 id="retention">7. Przechowywanie Danych</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Typ danych</th>
+                    <th>Okres przechowywania</th>
+                    <th>Lokacja</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dane w sesji (WiFi, lokalizacja, AR)</td>
+                    <td>Tylko podczas sesji aplikacji</td>
+                    <td>Urządzenie użytkownika</td>
+                </tr>
+                <tr>
+                    <td>Preferencje użytkownika</td>
+                    <td>Do czasu usunięcia aplikacji</td>
+                    <td>Urządzenie użytkownika</td>
+                </tr>
+                <tr>
+                    <td>Logi diagnostyki</td>
+                    <td>30 dni (jeśli wysłane)</td>
+                    <td>Serwer (jeśli zdecydowano się na raport)</td>
+                </tr>
+                <tr>
+                    <td>Dane Google Analytics</td>
+                    <td>Zgodnie z polityką Google</td>
+                    <td>Serwery Google</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Usunięcie danych:</strong> Po dezinstalacji aplikacji wszystkie dane lokalne są automatycznie usunięte.</p>
+
+        <h2 id="rights">8. Twoje Prawa</h2>
+        <p>Na mocy RODO masz prawo do:</p>
+        <ol>
+            <li><strong>Dostępu</strong> - Wiesz, jakie dane o Tobie przetwarzamy</li>
+            <li><strong>Sprostowania</strong> - Możesz poprosić o poprawę błędnych danych</li>
+            <li><strong>Usunięcia</strong> - Prawo do "bycia zapomnianym" (z pewnymi wyjątkami)</li>
+            <li><strong>Ograniczenia</strong> - Możesz ograniczyć przetwarzanie danych</li>
+            <li><strong>Przenoszenia</strong> - Możesz otrzymać dane w formacie maszynowo czytelnym</li>
+            <li><strong>Sprzeciwu</strong> - Możesz sprzeciwić się przetwarzaniu</li>
+            <li><strong>Wycofania zgody</strong> - Możesz wycofać wcześniejszą zgodę w ustawieniach Androida</li>
+        </ol>
+        <p><strong>Jak skorzystać:</strong> Wyślij email na adres podany w punkcie 2 z zaznaczeniem, którego prawa chcesz skorzystać. Odpowiemy w ciągu 30 dni.</p>
+
+        <h2 id="security">9. Bezpieczeństwo Danych</h2>
+        <p>Wdrażamy następujące środki bezpieczeństwa:</p>
+        <div class="success-box">
+            <ul>
+                <li><span class="emoji">✅</span><strong>Szyfrowanie transportu</strong> - Połączenia HTTPS do serwerów</li>
+                <li><span class="emoji">✅</span><strong>Lokalność danych</strong> - Większość danych przetwarzana na urządzeniu</li>
+                <li><span class="emoji">✅</span><strong>Brak logów hasła</strong> - Hasła WiFi nigdy nie są zapisywane</li>
+                <li><span class="emoji">✅</span><strong>Minimalizacja danych</strong> - Zbieramy tylko dane niezbędne do funkcjonowania</li>
+                <li><span class="emoji">✅</span><strong>Regularne audyty</strong> - Sprawdzenie bezpieczeństwa aplikacji</li>
+                <li><span class="emoji">✅</span><strong>Aktualizacje</strong> - Szybkie łatki bezpieczeństwa</li>
+            </ul>
+        </div>
+        <div class="warning-box">
+            <strong>⚠️ Jednak:</strong> Żaden system nie jest 100% bezpieczny. Jeśli podejrzewasz naruszenie danych, skontaktuj się z nami natychmiast.
+        </div>
+
+        <h2 id="children">10. Polityka Dotycząca Dzieci</h2>
+        <p>Aplikacja <strong>nie jest przeznaczona dla osób poniżej 13 lat</strong> (lub lokalnie obowiązującego wieku).</p>
+        <p>Nie zbieramy świadomie danych od dzieci. Jeśli okaże się, że zbieraliśmy dane od osoby poniżej 13 lat, usuniemy je natychmiast.</p>
+        <p><strong>Dla rodziców:</strong> Jeśli Twoje dziecko użyło aplikacji bez zgody, skontaktuj się z nami na email podany w punkcie 2.</p>
+
+        <h2 id="cookies">11. Pliki Cookie i Similar Technologies</h2>
+        <p>Aplikacja mobilna <strong>nie używa plików cookie</strong> w tradycyjnym sensie. Jednak:</p>
+        <ul>
+            <li><strong>SharedPreferences/DataStore</strong> - Przechowywanie preferencji lokalnie (analogiczne do cookies)</li>
+            <li><strong>Identyfikatory urządzenia</strong> - Android generuje unikalny ID dla celów analitycznych (możesz wyłączyć w ustawieniach)</li>
+        </ul>
+
+        <h2 id="links">12. Linki do Stron Trzecich</h2>
+        <p>Aplikacja może zawierać linki do stron internetowych (np. polityka Google, strona autora). <strong>Nie jesteśmy odpowiedzialni</strong> za politykę prywatności tych stron. Każda strona ma swoją własną politykę.</p>
+
+        <h2 id="changes">13. Zmiany w Polityce Prywatności</h2>
+        <p>Możemy aktualizować tę Politykę w dowolnym momencie. Jeśli będą istotne zmiany, powiadomimy Cię:</p>
+        <ul>
+            <li>Poprzez powiadomienie w aplikacji</li>
+            <li>Poprzez update w Google Play z opisem zmian</li>
+        </ul>
+        <p><strong>Data ostatniej aktualizacji:</strong> 29 listopada 2025</p>
+        <p>Używając aplikacji po zmianach, akceptujesz nową Politykę.</p>
+
+        <h2 id="complaints">14. Skargi do Organu Nadzoru</h2>
+        <p>Jeśli uważasz, że przetwarzanie Twoich danych narusza RODO, możesz złożyć skargę do:</p>
+        <div class="highlight-box">
+            <p><strong>Prezesa Urzędu Ochrony Danych Osobowych (PUODO)</strong></p>
+            <ul style="margin-top: 10px;">
+                <li><strong>Strona:</strong> <a href="https://uodo.gov.pl" target="_blank">uodo.gov.pl</a></li>
+                <li><strong>Adres:</strong> ul. Stawki 2, 00-193 Warszawa</li>
+            </ul>
+        </div>
+
+        <h2 id="contact">15. Kontakt</h2>
+        <p>Jeśli masz pytania dotyczące tej Polityki Prywatności:</p>
+        <ul>
+            <li>📧 <strong>Email:</strong> kacpermazur@onet.pl</li>
+        </ul>
+
+        <h2 id="permissions">16. Podsumowanie Uprawnień i Ich Uzasadnienie</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Uprawnienie</th>
+                    <th>Czemu jest potrzebne</th>
+                    <th>Czy dane są przechowywane</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>ACCESS_FINE_LOCATION</code></td>
+                    <td>Wyświetlanie lokalizacji na mapie AR</td>
+                    <td>Nie - przetwarzane lokalnie</td>
+                </tr>
+                <tr>
+                    <td><code>ACCESS_COARSE_LOCATION</code></td>
+                    <td>Przybliżona lokalizacja dla sieci WiFi</td>
+                    <td>Nie - przetwarzane lokalnie</td>
+                </tr>
+                <tr>
+                    <td><code>ACCESS_WIFI_STATE</code></td>
+                    <td>Skanowanie dostępnych sieci</td>
+                    <td>Nie - przetwarzane lokalnie</td>
+                </tr>
+                <tr>
+                    <td><code>CHANGE_WIFI_STATE</code></td>
+                    <td>Zarządzanie WiFi (jeśli implementowane)</td>
+                    <td>Nie - przetwarzane lokalnie</td>
+                </tr>
+                <tr>
+                    <td><code>CAMERA</code></td>
+                    <td>Wizualizacja AR sieci WiFi</td>
+                    <td>Nie - przetwarzane w czasie rzeczywistym</td>
+                </tr>
+                <tr>
+                    <td><code>READ_EXTERNAL_STORAGE</code></td>
+                    <td>Zapis raportów</td>
+                    <td>Lokalnie - użytkownik decyduje</td>
+                </tr>
+                <tr>
+                    <td><code>INTERNET</code></td>
+                    <td>Komunikacja z serwerami</td>
+                    <td>Opcjonalne - tylko dla analytics</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <p><strong>🙏 Dziękujemy za korzystanie z MySmartWiFiAnalyzer!</strong></p>
+            <p>Niniejsza Polityka Prywatności weszła w życie 29 listopada 2025 roku.</p>
+            <p style="margin-top: 20px; color: #555; font-size: 0.85em;">Dokument zgodny z RODO, ustawą o ochronie danych osobowych oraz wszelkimi obowiązującymi regulacjami polskimi.</p>
+        </footer>
+    </div>
+</body>
+</html>
